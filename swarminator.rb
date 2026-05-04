@@ -5,21 +5,21 @@
 class Swarminator < Formula
   desc "Go-based swarm node runner with deterministic safety rules and ACP-backed multi-agent execution"
   homepage "https://github.com/InNoobWeTrust/swarminator"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/InNoobWeTrust/swarminator/releases/download/v0.2.0/swarminator_darwin_amd64.tar.gz"
-      sha256 "27db50fb53123b6920ab16e4e5faa7a4c10fbf98b9e0199e3ce11edb4c68eefe"
+      url "https://github.com/InNoobWeTrust/swarminator/releases/download/v0.3.0/swarminator_darwin_amd64.tar.gz"
+      sha256 "9b6127334a22227712f43f069b8705400ce797d9887d03c6c6fef625286fffde"
 
       define_method(:install) do
         bin.install "swarminator"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/InNoobWeTrust/swarminator/releases/download/v0.2.0/swarminator_darwin_arm64.tar.gz"
-      sha256 "6c92a92a3e9fab9ea7bc6c9f2163df1c281fdc68c9a5ab493196799b9f810aa0"
+      url "https://github.com/InNoobWeTrust/swarminator/releases/download/v0.3.0/swarminator_darwin_arm64.tar.gz"
+      sha256 "e61217550342235629da49d34ddc2f662883a2c8632d1b0e93e12a05a427af76"
 
       define_method(:install) do
         bin.install "swarminator"
@@ -29,15 +29,15 @@ class Swarminator < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/InNoobWeTrust/swarminator/releases/download/v0.2.0/swarminator_linux_amd64.tar.gz"
-      sha256 "44c029ac818fbb41c9ab4e4afdab4fc0c017f1b7b8276390e9fbbf71dcd39cb7"
+      url "https://github.com/InNoobWeTrust/swarminator/releases/download/v0.3.0/swarminator_linux_amd64.tar.gz"
+      sha256 "7cc1246934bdfb4d74ea4dab77f25712a0d67589551420f53c60753e7c1ad0de"
       define_method(:install) do
         bin.install "swarminator"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/InNoobWeTrust/swarminator/releases/download/v0.2.0/swarminator_linux_arm64.tar.gz"
-      sha256 "b24f9977d33b885120db050252369bb940356ad58abdcae5696921e746ce5d78"
+      url "https://github.com/InNoobWeTrust/swarminator/releases/download/v0.3.0/swarminator_linux_arm64.tar.gz"
+      sha256 "9edf4cb29de562f8f6a66c3c0ad32daf1810df619c9fb61a5d9a8ed034553725"
       define_method(:install) do
         bin.install "swarminator"
       end
